@@ -10,6 +10,7 @@ jobs:
       - run: |
           # build docker image
           docker build -t dusty-test-blazor-thing .
+          docker rm -f dusty-test-blazor-thing || true
           # run image (must have -d so workflow ends)
           docker run -d -p 7697:8080 --name dusty-test-blazor-thing dusty-test-blazor-thing
           echo "made it to the end!!! 🚀"
