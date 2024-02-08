@@ -20,4 +20,7 @@ sudo systemctl restart alex-upload
 echo "done doing systemd stuff"
 systemctl status alex-upload
 
+  
 
+
+  
