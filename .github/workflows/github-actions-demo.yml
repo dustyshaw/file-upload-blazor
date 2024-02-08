@@ -8,5 +8,10 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v4
       - run: |
-          pwd
+          # build docker image
+          docker build -t dusty-test-blazor-thing .
+          # run image (must have -d so workflow ends)
+          docker run -d dusty-test-blazor-thing
+
+
 
