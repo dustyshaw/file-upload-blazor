@@ -12,6 +12,7 @@ jobs:
           docker build -t dusty-test-blazor-thing .
           # run image (must have -d so workflow ends)
           docker run -d dusty-test-blazor-thing
+          echo "made it to the end 🚀"
 
 
 
